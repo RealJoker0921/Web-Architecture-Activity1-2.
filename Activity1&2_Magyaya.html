@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity 1: Web Architecture & Semantic HTML5</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+        main {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        section {
+            background-color: #ffffff;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 25px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+        }
+        article {
+            background-color: #f9f9f9;
+            border-left: 4px solid #007acc;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 0 4px 4px 0;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input, select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        header{
+            height: 100px;
+            background:linear-gradient(135deg,#fe0000, #2b01ff);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            position:relative;
+            overflow:hidden;
+        }
+</style>
+
+<body>
+    <header>
+        <h1>Web Architecture & Semantic HTML5</h1>
+    </header>
+
+    <nav>
+        <li><a href="#Architecture">Architecture</a></li>
+        <li><a href="#Multimedia">Multimedia</a></li>
+        <li><a href="#Form-Section">Form Section</a></li>
+    </nav>
+
+    <main>
+        <section id="Architecture">
+            <h2>Architecture</h2>
+            <article>
+                <h3>Client-Server Model</h3>
+                <p>A network structure where a client program or device asks for a service or data, and a central server processes that request and sends back a response.</p>
+            </article>
+            <article>
+                <h3>Domain Name System (DNS)</h3>
+                <p>The Domain Name System (DNS) is a hierarchical and decentralized naming system for computers, services, or other resources connected to the Internet or a private network. It translates more readily memorized domain names to the numerical IP addresses needed for the purpose of locating and identifying computer services and resources.</p>
+            </article>
+            <article>
+                <h3>HTTP/HTTPS</h3>
+                <p>HTTP (Hypertext Transfer Protocol) is the foundation of data communication on the web. HTTPS (HTTP Secure) is a secure version of HTTP that uses SSL/TLS to encrypt the data being transmitted.</p>
+            </article>
+        </section>
+        <section id="Multimedia">
+            <h2>Multimedia</h2>
+            <div>
+                <h3 style="color: darkred;">Horse Sound</h3>
+                <audio controls>
+                    <source src=" https://www.w3schools.com/html/horse.mp3" type="audio/mpeg"> </audio>
+            </div>
+            <div>
+                <h3 style="color: darkviolet;">Kawawang ButterFly</h3>
+                <video width="320" height="240" controls>
+                    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                </video>   
+            </div>
+            
+        <section id="Form-Section">
+            <h2>Protocol Selection Form</h2>
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label prejudices-field for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" required placeholder="Enter your full name">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="type" id="email" name="email" required placeholder="username@email.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="protocol">Preferred Protocol:</label>
+                    <select id="protocol" name="protocol" required>
+                        <option value="">Select a Protocol</option>
+                        <option value="http">HTTP</option>
+                        <option value="https">HTTPS (Secure)</option>
+                    </select>
+                </div>
+
+
+                <button type="submit" style="background-color: #007acc; color: white; border: none; padding: 12px 24px; border-radius: 4px; cursor: pointer; font-size: 16px; font-weight: bold;">
+                    Submit Protocol Data
+                </button>
+            </form>
+        </section>
+    </main>
+    
+</body>
+</html>
